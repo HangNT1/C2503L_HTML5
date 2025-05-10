@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Form la 1 bieu mau dung de thu thap thong tin 
+     VD: dang nhap, dang ky,... 
+     => Form thuong gui du lieu tu phia client(UI - giao dien nguoi dung) toi server (admin):
+     client: HTML, React JS 
+     server: xu ly logic: Java - Spring Boot, C# - .Net, PHP... 
+     Cu phap: 
+     <form>
+        Chua cac o input 
+     </form>
+      -->
+    <form action="">
+      Username: <input type="text" />
+      <br />
+      Password: <input type="password" />
+      <br />
+      Tuoi: <input type="number" />
+      <br />
+      <!-- Chon 1 trong 2: radio  -->
+      Gioi tinh: <input type="radio" value="nam" name="gioiTinh" checked />Nam
+      <input type="radio" value="nu" name="gioiTinh" /> Nữ
+      <br />
+      <!-- Chon nhieu gia tri: checkbox -->
+      So thich:
+      <input type="checkbox" value="an" />Ăn
+      <input type="checkbox" value="choi" />Chơi
+      <input type="checkbox" value="ngu" />Ngủ
+      <br />
+      <!-- Chon file: file -->
+      File: <input type="file" />
+      <br />
+      Ghi chu: <textarea></textarea>
+      <br />
+      Ngay sinh: <input type="date" /> <br />
+      <!-- Lua chon show xuong -->
+      Mon hoc:
+      <select name="" id="">
+        <option value="toan">Toan</option>
+        <option value="ly">Ly</option>
+        <option value="hoa">Hoa</option>
+        <option value="sinh">Sinh</option>
+      </select>
+      <br />
+      <!-- Mau sac -->
+      Mau sac : <input type="color" /><br />
+      <!-- Email -->
+      Email: <input type="email" /><br />
+      <!-- Tim kiem trong cbb: https://select2.org/getting-started/basic-usage 
+       datalist
+       -->
+      <input type="text" list="inputData1" />
+      <datalist id="inputData1">
+        <option value="toan">Toan</option>
+        <option value="ly">Ly</option>
+        <option value="hoa">Hoa</option>
+        <option value="sinh">Sinh</option>
+      </datalist>
+      <br />
+      Range: <input type="range" name="" id="" />
+      <br />
+      Pin: <meter value="30" min="0" max="100"></meter>
+      <br />
+      <!-- <button type="submit">Submit</button> -->
+      <input type="button" value="Click me" />
+      <input type="reset" value="Reset data" />
+    </form>
+  </body>
+</html>
