@@ -13,9 +13,9 @@
         font-size: 50px;
         color: red;
       } */
-      p {
+      /* p {
         color: blue !important;
-      }
+      } */
       .title-header {
         color: blue;
       }
@@ -23,8 +23,35 @@
         font-size: 100px;
         color: red;
       }
-      * {
+      /* * {
         font-family: "Courier New", Courier, monospace;
+      } */
+      /* a:hover {
+        font-size: 50px;
+        color: red;
+      }
+      a:active {
+        font-size: 10px;
+        color: black;
+      } */
+      a:visited {
+        color: red;
+      }
+      /**
+      Cu phap: selector : hanh dong{
+      hanh dong: 
+        hover : di chuot vao
+        visited: kiem tra su hoat dong: lan thu 2 bam vao 
+        active: khi link nay duoc click 
+      }
+      */
+      /* p::first-letter {
+        font-size: 100px;
+        color: blue;
+      } */
+      p::first-line {
+        font-size: 150px;
+        color: red;
       }
     </style>
     <!-- <link rel="stylesheet" href="css/demo.css" /> -->
@@ -45,11 +72,19 @@
     4. Universal: * => TAT CA NOI DUNG TRONG FILE HTML DEU AN CSS NAY
     -->
     <!-- inline > internal > external : important : muc do uu tien so 1-->
-    <p style="color: red">Đoạn văn</p>
+    <p style="color: red">
+      Đoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn
+      vănĐoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn
+      vănĐoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn
+      vănĐoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn vănĐoạn
+      văn
+    </p>
     <p>Đoạn văn1</p>
     <h1 class="title-header">Title</h1>
     <h1 id="title1">Title1</h1>
     <h1>Title2</h1>
     <h1 class="title-header">Title3</h1>
+    <!-- Ma gia : presude css -->
+    <a href="https://www.w3schools.com/css/css_pseudo_elements.asp">Click me</a>
   </body>
 </html>

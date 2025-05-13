@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <input
+        type="text"
+        placeholder="Moi nhap thong tin"
+        required
+        pattern="[a-z A-Z]+"
+        minlength="5"
+        maxlength="10"
+      />
+      <!-- pattern: Check dung dinh dang theo mong muon
+       [0-9]+ <=> \d
+       1 ky thu : 0 1 9 11 111  
+       abd Abc 0-9 khong duoc phep chua ky tu dac biet: @ !@ $
+       PH[0-9]{6}
+       minlength: toi thieu la xx ky tu ky 
+       maxlength: toi da la xx ky tu ky 
+       min = 10
+       max = 15
+       => type la number
+        -->
+      <br />
+      <button type="submit">Submit</button>
+      <!-- https://viblo.asia/p/bieu-thuc-chinh-quy-regex-trong-javascript-QpmleQ9mlrd -->
+    </form>
+  </body>
+</html>

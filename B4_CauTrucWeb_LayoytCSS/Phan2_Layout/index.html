@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+        B1: Chia khung HTML
+        B2: Chia layout cho toan bo trang web 
+        B3: Dung tung phan trong trang web
+       */
+      * {
+        margin: 0px;
+      }
+      body {
+        /* Day la cach chia theo flex */
+        display: flex;
+        /* Default cua flex: chieu ngang => OX */
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        /* Chieu ngang */
+        /* justify-content: center; */
+      }
+      header,
+      footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        background-color: black;
+        color: white;
+        width: 100%;
+      }
+      /* box-shadow */
+      nav ul li {
+        /* Chuyen thanh ngang hang */
+        display: inline;
+        margin-right: 10px;
+      }
+      nav ul li a {
+        color: white;
+        /* Bo gach ngang */
+        text-decoration: none;
+        /* in dam  */
+        font-weight: bold;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
+      }
+      /* box-shadow: 0px 5px 8px black; */
+      .content-first,
+      .content-second {
+        box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+      }
+      .content-first {
+        width: 60%;
+        margin-right: 30px;
+      }
+      .content-second {
+        width: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p></p>
+      <h1>My Website</h1>
+      <p>Welcome to my website!</p>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><span>Home</span></a>
+          </li>
+          <li>
+            <a href="#"><span>About</span></a>
+          </li>
+          <li>
+            <a href="#"><span>Service</span></a>
+          </li>
+          <li>
+            <a href="#"><span>Contact</span></a>
+          </li>
+        </ul>
+      </nav>
+      <p></p>
+    </header>
+    <main>
+      <section class="content-first">
+        <h1>Main content</h1>
+        <p>
+          This is main content area. Here you can add friend, blog, or any other
+          main content for your website
+        </p>
+      </section>
+      <aside class="content-second">
+        <p>Related links</p>
+        <ul>
+          <li>
+            <a href="#"><span>Link 1</span></a>
+          </li>
+          <li>
+            <a href="#"><span>Link 2</span></a>
+          </li>
+          <li>
+            <a href="#"><span>Link 3</span></a>
+          </li>
+        </ul>
+      </aside>
+    </main>
+    <footer>
+      <p></p>
+      <p>&copy;2024 My website.All right reserved.</p>
+      <p></p>
+    </footer>
+  </body>
+</html>

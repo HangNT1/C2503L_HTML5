@@ -16,8 +16,8 @@
         Chua cac o input 
      </form>
       -->
-    <form action="">
-      Username: <input type="text" />
+    <form action="" method="post">
+      Username: <input type="text" required pattern="" />
       <br />
       Password: <input type="password" />
       <br />
@@ -51,7 +51,7 @@
       <!-- Mau sac -->
       Mau sac : <input type="color" /><br />
       <!-- Email -->
-      Email: <input type="email" /><br />
+      Email: <input type="email" placeholder="Moi nhap email" /><br />
       <!-- Tim kiem trong cbb: https://select2.org/getting-started/basic-usage 
        datalist
        -->
@@ -67,8 +67,10 @@
       <br />
       Pin: <meter value="30" min="0" max="100"></meter>
       <br />
+      <input type="search" placeholder="Muốn tìm kiếm thì hãy nhập vào đây" />
+      <br />
       <!-- <button type="submit">Submit</button> -->
-      <input type="button" value="Click me" />
+      <input type="submit" value="Click me" />
       <input type="reset" value="Reset data" />
     </form>
   </body>
