@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 100px;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* gap: 30px; */
+        margin: 0px;
+      }
+      header,
+      footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        color: white;
+        width: 100%;
+      }
+      nav {
+        background-color: gray;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        display: inline;
+        padding-right: 30px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 95%;
+        margin-top: 30px;
+        gap: 30px;
+      }
+      .content {
+        box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        width: 100%;
+      }
+      .section-final {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 30px;
+      }
+      .content-left {
+        box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        width: 50%;
+      }
+      aside {
+        box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+        width: 50%;
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Header - Tiêu đề trang</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Giới thiệu</a></li>
+        <li><a href="#">Liên hệ</a></li>
+        <li><a href="#">Dịch vụ</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="content">
+        <img
+          src="https://app.gak.vn/storage/uploads/Xv4c0WZA7WqGOkskavde57TdcQXruwtTjSzNi025.jpg"
+          alt=""
+        />
+        <h3>Doan noi dung 1</h3>
+        <p>lorem ipsum dolor sit</p>
+      </section>
+      <section class="content">
+        <img
+          src="https://app.gak.vn/storage/uploads/Xv4c0WZA7WqGOkskavde57TdcQXruwtTjSzNi025.jpg"
+          alt=""
+        />
+        <h3>Doan noi dung 2</h3>
+        <p>Nulla facilisi .sed</p>
+      </section>
+      <section class="content">
+        <img
+          src="https://app.gak.vn/storage/uploads/Xv4c0WZA7WqGOkskavde57TdcQXruwtTjSzNi025.jpg"
+          alt=""
+        />
+        <h3>Doan noi dung 3</h3>
+        <p>donee up dolor sit</p>
+      </section>
+      <section class="section-final">
+        <div class="content-left">
+          <img
+            src="https://app.gak.vn/storage/uploads/Xv4c0WZA7WqGOkskavde57TdcQXruwtTjSzNi025.jpg"
+            alt=""
+          />
+          <h3>doan noi dung 1</h3>
+          <p>lorem ipsum</p>
+        </div>
+        <aside>
+          <h3>siddebar thong tin them</h3>
+          <p>phan sidebar</p>
+          <ul>
+            <li>
+              <a href="#">lien ket 1</a>
+            </li>
+            <li>
+              <a href="#">lien ket 2</a>
+            </li>
+            <li>
+              <a href="#">lien ket 3</a>
+            </li>
+          </ul>
+        </aside>
+      </section>
+    </main>
+    <footer>
+      <p>Đây là footer</p>
+    </footer>
+  </body>
+</html>

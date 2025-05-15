@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:hover {
+        background-color: red;
+        font-size: 50px;
+      }
+      /**
+      transistion: giup lam muot  thuoc tinh css 
+      ease: lam muot
+      ease-in: cham => tang dan 
+      ease-out: tang => cham dan 
+      ease in out: ket hop ca 2
+      */
+      /* https://viblo.asia/p/tap-tanh-tim-hieu-css-animation-bai-1-transition-4dbZNprL5YM */
+      a {
+        transition: background-color 3s ease;
+        transition: font-size 3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Chu header -->
+      <h1 style="text-align: center">Day la header</h1>
+      <nav>
+        <a href="#">Trang chu</a>
+        <a href="#">Trang chu1</a>
+        <a href="#">Trang chu2</a>
+      </nav>
+    </header>
+    <main>
+      <!-- Than bai  -->
+      <section>Day la phan 1</section>
+      <aside>Day la phan quang cao</aside>
+      <video controls width="300px" autoplay>
+        <source src="../video/test.mp4" type="video/mp4" />
+      </video>
+    </main>
+    <footer>
+      <!-- Ket bai -->
+      <p>Day la footer</p>
+    </footer>
+  </body>
+</html>
