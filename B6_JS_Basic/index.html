@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS -->
+    <!-- JS -->
+    <!-- <script src="index.js"> -->
+    <!-- <script>
+      // Viet truc tiep trong file
+      //   alert("aaaaa"); // hien thi thong bao
+      //   document.writeln("JS viet tren trinh duyet"); // viet text tren trinh duyet
+      //   confirm("Ban muon gi"); // yes / no : Cau hoi
+      //   prompt("Moi ban nhap thong tin ten cua minh"); // Nhap thong tin JS
+      // Cach lay value cua 1 phan tu nao day (o input, button, ul,li...)
+      var value = document.getElementById("text-bai1");
+      console.log(value);
+    </script> -->
+  </head>
+  <body>
+    <!-- DOM -->
+    <p>Test Demo</p>
+    <h1 style="text-align: center">Buoi 6 - JS</h1>
+    <!-- 1. Tao 1 text,bam vao button thi noi dung o text thay doi 
+     2. Tao 2 o input, 4 button tong, hieu, tich thuong -->
+    <!-- JS -->
+    <p id="text-bai1">Text bai 1</p>
+    <button id="button-click" onclick="test()">Click me</button>
+    <script>
+      // Viet truc tiep trong file
+      //   alert("aaaaa"); // hien thi thong bao
+      //   document.writeln("JS viet tren trinh duyet"); // viet text tren trinh duyet
+      //   confirm("Ban muon gi"); // yes / no : Cau hoi
+      //   prompt("Moi ban nhap thong tin ten cua minh"); // Nhap thong tin JS
+      // Cach lay value cua 1 phan tu nao day (o input, button, ul,li...)
+      //   var value = document.getElementById("text-bai1");
+      //   console.log(value);
+      function test() {
+        // alert("Da bam vao ham");
+        var value = document.getElementById("text-bai1");
+        value.innerText = "Nguyen Thuy Hang";
+      }
+    </script>
+  </body>
+</html>
