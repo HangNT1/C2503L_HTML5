@@ -13,7 +13,8 @@
       //   document.writeln("JS viet tren trinh duyet"); // viet text tren trinh duyet
       //   confirm("Ban muon gi"); // yes / no : Cau hoi
       //   prompt("Moi ban nhap thong tin ten cua minh"); // Nhap thong tin JS
-      // Cach lay value cua 1 phan tu nao day (o input, button, ul,li...)
+      // Cach lay value cua 1 phan tu nao day (o input, button, ul,li...) 
+          => selector name: class, id, name...
       var value = document.getElementById("text-bai1");
       console.log(value);
     </script> -->
@@ -27,6 +28,18 @@
     <!-- JS -->
     <p id="text-bai1">Text bai 1</p>
     <button id="button-click" onclick="test()">Click me</button>
+    <p>Bai 2 - tinh tong hieu tich thuong</p>
+    Number 1: <input type="number" id="number-first" />
+    <br />
+    Number 2: <input type="number" id="number-second" />
+    <br />
+    <button onclick="tinhTong()">Cộng</button>
+    <button onclick="tinhHieu()">Trừ</button>
+    <button onclick="tinhTich()">Nhân</button>
+    <button onclick="tinhThuong()">Chia</button>
+    <br />
+    <span>Kết quả</span>
+    <span id="ket-qua"></span>
     <script>
       // Viet truc tiep trong file
       //   alert("aaaaa"); // hien thi thong bao
@@ -41,6 +54,66 @@
         var value = document.getElementById("text-bai1");
         value.innerText = "Nguyen Thuy Hang";
       }
+      /**
+       * Cách khai báo biến trong JS:
+       * C: kiểu dữ liệu tên Biên;
+       * JS: phạm vi tên biên;
+       * var number;
+       * ES6: var khong duoc dung nua => let/const
+       * Các kiểu dữ liệu trong JS:
+       *    + Nguyên thuỷ: primitive => Giống C
+       *        + Số: number (1, 1.5)
+       *        + String: chuỗi ký tự: "Hello"
+       *        + Boolean: true/false
+       *        + Null: Giá trị rỗng, không tồn tại
+       *        + Underfine: Giá trị duy nhất
+       *        ....
+       *    + Kiểu phức hợp (non - primitive)
+       *        + Object: là tập hợp của key - value
+       *        + Array: Là 1 dạng Object đặc biệt: [1,2,3]
+       *        + Function
+       */
+
+      // var a = 5;
+      // console.log(a);
+      // console.log(typeof a); // number
+
+      // var a = "Xin chao";
+      // console.log("Gia tri sau: " + a);
+      // console.log(typeof a); // String
+      // Không an toàn
+      // Cách kiểm tra 1 biến là kiểu dữ liệu: typeOf
+      // let b = 5;
+      // console.log(b);
+      // b = 10;
+      // console.log("Gia tri sau: " + b);
+      // Let => gia tri duoc co the duoc gan lai
+      // const c = 10;
+      // console.log(c);
+      // c = 50;
+      // console.log(c);
+      // const => gia tri khong the duoc gan lai
+      // https://viblo.asia/p/phan-biet-kieu-bien-var-let-va-const-trong-javascript-ORNZqaOnZ0n
+      // C1: Viet ham binh thuong:
+      function tinhTong1() {}
+      // C2: ES5 => arrow function (=>)
+      // https://viblo.asia/p/the-nao-la-arrow-function-cach-thuc-su-dung-arrow-function-va-nhung-dieu-can-chu-y-Qbq5QL4GlD8
+      let tinhTong = () => {
+        const numberFirst = document.getElementById("number-first");
+        const numberSecond = document.getElementById("number-second");
+        const ketQua = document.getElementById("ket-qua");
+        ketQua.innerText =
+          // Number(ten bien)
+          // Number.parseInt /Number.parseFloat
+          Number(numberFirst.value) + Number(numberSecond.value);
+      };
+      let tinhHieu = () => {
+        const numberFirst = document.getElementById("number-first");
+        const numberSecond = document.getElementById("number-second");
+        const ketQua = document.getElementById("ket-qua");
+        ketQua.innerText =
+          Number(numberFirst.value) / Number(numberSecond.value);
+      };
     </script>
   </body>
 </html>
