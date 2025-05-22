@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="cv"
+      height="500px"
+      width="500px"
+      style="border: 2px red solid"
+    ></canvas>
+    <script>
+      var c = document.getElementById("cv");
+      // ve 2d
+      var ctx = c.getContext("2d");
+      // Cam but => Bat dau ve
+      ctx.beginPath();
+      // Di chuyen toi toa do nao do => moveTo
+      ctx.moveTo(50, 50);
+      ctx.lineTo(50, 100);
+      ctx.lineTo(100, 100);
+      ctx.lineTo(100, 50);
+      ctx.lineTo(50, 50);
+      ctx.stroke(); // Dung de ve
+      // 1. Ve hinh chu nhat co chieu dai la 100 cm, chieu rong la 30 cm tinh tu diem co toa do 60,40
+      // 2. Ve hinh vuong co canh 60cm tinh tu diem co toa do 100, 100
+    </script>
+  </body>
+</html>

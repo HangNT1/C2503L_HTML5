@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="cv"
+      height="500"
+      width="500"
+      style="border: 2px red solid"
+    ></canvas>
+    <script>
+      // 1. Ve hinh chu nhat co chieu dai la 100 cm,
+      // chieu rong la 30 cm tinh tu diem co
+      // toa do 60,40
+      var c = document.getElementById("cv");
+      var cv = c.getContext("2d");
+      cv.beginPath();
+      //   cv.moveTo(60, 40);
+      //   cv.lineTo(60, 70);
+      //   cv.lineTo(160, 70);
+      //   cv.lineTo(160, 40);
+      //   cv.lineTo(60, 40);
+      //   Boi mau cho hcn
+      //   cv.fillStyle = "#4fa867";
+      //   // fillRect(x,y,width,height)
+      //   // x,y: Toa do bat dau ve
+      //   // width: dai
+      //   // height: cao
+      //   cv.fillRect(60, 40, 100, 30);
+      //   cv.stroke();
+      // mau theo vien
+      cv.strokeStyle = "red";
+      cv.strokeRect(60, 40, 100, 30);
+      cv.arc(100, 50, 50, 0, 2 * Math.PI);
+      cv.stroke();
+      // https://viblo.asia/p/gioi-thieu-html5-canvas-PjxMeV6gG4YL
+    </script>
+  </body>
+</html>

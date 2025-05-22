@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      Username: <input type="text" id="uname" />
+      <span class="error"></span>
+      <br />
+      Password: <input type="password" id="pass" />
+      <span class="error"></span>
+      <br />
+      <button onclick="loginForm()" type="button">Login</button>
+    </form>
+    <script>
+      function loginForm() {
+        // B1: Lay tt cua cac o input
+        var username = document.getElementById("uname").value;
+        var pw = document.getElementById("pass").value;
+        var errors = document.getElementsByClassName("error");
+        // 1 mang
+        // B2: Check dieu kien
+        // // Reset lai du lieu
+        errors[0].innerText = "";
+        errors[1].innerText = "";
+        // Check
+        if (username === "") {
+          errors[0].innerText = "Username khong duoc de trong";
+        }
+        if (pw === "") {
+          errors[1].innerText = "Pasword khong duoc de trong";
+        }
+        if (username === "HangNT169" && pw === "123456") {
+          alert("Login thanh cong");
+        } else {
+          alert("Login that bai");
+        }
+      }
+    </script>
+  </body>
+</html>
