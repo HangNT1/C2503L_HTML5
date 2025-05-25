@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Geolocation																									
+	Toạ độ trên trái đất => gồm 2 số longvivute, lastvivute (kinh độ & vũ độ)																								
+	Gọi chung là GPS. Muốn lấy vị trí chính xác chung ta cần 3 vệ tinh để kết nối được 3 vệ tính thì độ chính xác rất cao. 																								
+	Tuy nhiên nếu ở toà nhà lớn có nhiều sắt thépche mất sóc => kinh độ vĩ độ sẽ không đúng. 																								
+	Geolocaltion có thể lấy thông qua vị trí khi kết nối vào mạng																								
+	Hoặc lấy thông qua cell: Khi dùng đt thì đt kết nối sóng.																								
+	Có 2 loại sóng: sóng ở vitel, vnpt, mobiphone (GSM). Ngày xưa có 1 số loại dùng sóng GMA. Nếu điện thoại hoặc sim dùng loại sóng này thì cũng lấy được vị trí theo sóng																								
+	=> Không chính xác 100%																								
+	Chốt lại có nhiều cách lấy vị trí																								
+	1. Cách chính xác nhất là 1 máy kết nối 3 vệ tinh GPS(vệ tinh bay ngoài trái đất) => dùng để xác định kinh độ vĩ độ 																								
+	VD: GPS trên ô tô hoặc đt, Hệ thống theo dõi máy bay (ADS-B, GPS, GLONASS) - Máy bay dùng GPS + GLONASS + Galileo để định vị chính xác.																								
+	2. Lấy thông qua sóng điện thoại: Có 2 loại sóng GMA & GSM => cell ID																								
+	3. Lấy thông qua vị trí IP Adress: thiết bị máy																								
+	4. Lấy qua wifi 																								
+	5. Bluetool: KHi đi vào trung tâm thương mại mở map là biết đứng ở đâu. 																																																																					
+Drag opetarion																																																	
+Web tren mobile																									
+	Trước kia là chỉ mở web trên máy tính nhưng bây h chúng ta dùng cả trên mobile 
+	Layout flex là layout linh hoạt tự co giãn. 
+    Layout table thì không hỗ trợ điều này. 
+    Grid dùng được nhưng khộg phải lúc nào cũng dùng xếp từng ô 1 																
+	Nội dung content thường dùng thẻ div, span, thẻ html5: header, footer, nav, ul li																								
+	Làm sao web hiển thị trên nhiều trình duyệt khác nhau(responsive): B
+    iết layout và dùng thẻ xoay quanh nội dung																								
+	DS FW hỗ trợ HTML5 chạy trên nền tảng mobile																								
+	responsive: Xây dựng các website sao cho hiển thị được đa nền tảng và không bị vỡ layout																								
+	Phù hợp với tương tác của người dùng (nói chung nó nhìn đẹp và phù hợp)																								
+ -->
+    <script>
+      navigator.geolocation.getCurrentPosition(
+        (p) => {
+          // ham nay se chay khi lay duoc toa do
+          // kinh do
+          var lat = p.coords.latitude;
+          // vi do
+          var long = p.coords.longitude;
+          var acc = p.coords.accuracy;
+          console.log(lat);
+          console.log(long);
+          console.log(acc);
+        },
+        (e) => {
+          console.log(e);
+        }
+      );
+    </script>
+  </body>
+</html>

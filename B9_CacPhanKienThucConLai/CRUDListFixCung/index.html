@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Thông tin sinh viên</h1>
+    <form>
+      MSSV: <input class="inputText" data-field="mssv" />
+      <span class="errorMessage" name="errorMessage"></span>
+
+      <br />
+      Tên:
+      <input class="inputText" data-field="ten" />
+      <span class="errorMessage" name="errorMessage"></span>
+      <br />
+      Tuổi:
+      <input class="inputText" type="number" data-field="tuoi" />
+      <span class="errorMessage" name="errorMessage"></span>
+      <br />
+      Địa chỉ:
+      <input class="inputText" data-field="diaChi" />
+      <span class="errorMessage" name="errorMessage"></span>
+      <br />
+      Giới tính:
+      <input
+        name="radioGroup"
+        class="inputText"
+        type="radio"
+        value="Nam"
+        checked
+        data-field="gioiTinh"
+      />
+      <span>Nam</span>
+      <input
+        class="inputText"
+        name="radioGroup"
+        data-field="gioiTinh"
+        type="radio"
+        value="Nữ"
+      />
+      <span>Nữ</span>
+      <br />
+      Ngành học:
+      <select class="inputText" data-field="chuyenNganh">
+        <option value="CNTT">Công nghệ thông tin</option>
+        <option value="Kinh tế">Kinh tế</option>
+        <option value="Ngoại ngữ">Ngoại ngữ</option>
+      </select>
+      <br />
+      <button type="button" onclick="addSinhVien()">Add</button>
+      <button type="button" onclick="updateSinhVien()">Update</button>
+      <button type="button" onclick="resetData()">Reset</button>
+    </form>
+    <h1>Danh sach sinh vien</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>MSSV</th>
+          <th>Tên</th>
+          <th>Tuổi</th>
+          <th>Địa chỉ</th>
+          <th>Giới tính</th>
+          <th>Chuyên ngànhh</th>
+          <th>Hành động</th>
+        </tr>
+      </thead>
+      <tbody id="table-data"></tbody>
+    </table>
+    <script src="./index.js"></script>
+  </body>
+</html>

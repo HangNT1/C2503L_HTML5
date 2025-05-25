@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Lam muot => transition */
+      h1:hover {
+        font-size: 100px;
+      }
+      h1 {
+        transition: font-size 5s ease;
+      }
+      /* Animation: Dung de lam muot  
+      animation: @keyframe
+      infinite: Chay mai mai 
+      */
+      h1 {
+        animation: nhapNhay1 10s 1;
+      }
+      @keyframes nhapNhay1 {
+        /* s: 0 */
+        0% {
+          opacity: 1;
+        }
+        /* s: khoang 3 */
+        30% {
+          opacity: 0.5;
+        }
+        /* s: 5 */
+        50% {
+          opacity: 0.3;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      /* Responsive tren cac kich thuoc man hinh */
+      @media only screen and (max-width: 800px) {
+        /* Lam gi thi lam  */
+        h1 {
+          font-size: 300px;
+          color: red;
+        }
+      }
+      @media only screen and (max-width: 900px) and (min-width: 800px) {
+        /* Lam gi thi lam  */
+        h1 {
+          font-size: 300px;
+          color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Test demo</h1>
+  </body>
+</html>
